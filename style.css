@@ -1,0 +1,111 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+button, radio {
+	cursor: pointer;
+}
+
+body{
+	font-family: "JetBrains Mono", monospace;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+main {
+	border: 1px black solid;
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	max-width: 600px;
+}
+
+.action{
+	display: flex;
+	gap: .5rem;
+	margin-bottom: 1rem;
+}
+
+.action input {
+	height: 2rem;
+	border-radius: 6px;
+}
+
+.action button{
+	width: 4rem;;
+	border-radius: 6px;
+}
+
+#todo-name{
+	flex: 1;
+}
+
+#todo-hours{
+	max-width: 5rem;
+}
+
+.filters {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters button, .item-count button{
+	background: none;
+	border: none;
+	text-decoration: underline;
+}
+
+.task {
+	padding: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.badge{
+	width: fit-content;
+	border: 2px solid gray;
+	border-radius: 1rem;
+	padding-inline: .5rem;
+}
+
+.badge-medium{
+	width: fit-content;
+	border: 2px solid gray;
+	border-radius: 1rem;
+	padding-inline: .5rem;
+	background-color: lightgray;
+}
+
+.badge-hard{
+	width: fit-content;
+	border: 2px solid gray;
+	border-radius: 1rem;
+	padding-inline: .5rem;
+	background-color: gray;
+}
+
+.remove-task{
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+hr {
+	width: 100%;
+}
+
+.item-count{
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer {
+	text-align: center;
+}
