@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-button, radio {
+button{
 	cursor: pointer;
 }
 
@@ -26,17 +26,23 @@ main {
 .action{
 	display: flex;
 	gap: .5rem;
-	margin-bottom: 1rem;
+	margin-block: 1rem;
 }
 
 .action input {
 	height: 2rem;
 	border-radius: 6px;
+	border: 1px solid lightgray;
+	padding: 8px;
 }
 
 .action button{
 	width: 4rem;;
+	text-align: center;
+	background-color: green;
 	border-radius: 6px;
+	border: none;
+	color: white;
 }
 
 #todo-name{
@@ -52,10 +58,29 @@ main {
 	justify-content: space-between;
 }
 
+.filters input[type="radio"]{
+	display: none;
+}
+
+.filters label{
+	padding-inline: .5rem;
+	cursor: pointer;
+}
+
+.filters input[type="radio"]:checked + label{
+	border: 2px solid black;
+	border-radius: 1rem;
+}
+
 .filters button, .item-count button{
 	background: none;
 	border: none;
 	text-decoration: underline;
+	color: gray;
+}
+
+.tasks{
+	margin-top: .5rem;
 }
 
 .task {
@@ -66,7 +91,12 @@ main {
 	align-items: center;
 }
 
+.task label{
+	cursor: pointer
+}
+
 .badge{
+	cursor: pointer;
 	width: fit-content;
 	border: 2px solid gray;
 	border-radius: 1rem;
@@ -74,6 +104,7 @@ main {
 }
 
 .badge-medium{
+	cursor: pointer;
 	width: fit-content;
 	border: 2px solid gray;
 	border-radius: 1rem;
@@ -82,6 +113,7 @@ main {
 }
 
 .badge-hard{
+	cursor: pointer;
 	width: fit-content;
 	border: 2px solid gray;
 	border-radius: 1rem;
@@ -104,8 +136,12 @@ hr {
 	margin-top: 1rem;
 	display: flex;
 	justify-content: space-between;
+	color: gray;
 }
 
 .footer {
 	text-align: center;
+	margin-top: 1rem;
+	color: gray;
+	font-size: 12px;
 }

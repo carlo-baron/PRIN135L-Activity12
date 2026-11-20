@@ -12,21 +12,21 @@
 		<main>
 			<h1>Todo List</h1>
 
-			<div class="action">
+			<form class="action">
 				<input id="todo-name" type="search" name="todo-name" placeholder="What needs to be done?"/>
 				<input id="todo-hours" type="number" name="todo-hours" value="0">
-				<button>Add</button>
-			</div>
+				<button type="submit">Add</button>
+			</form>
 
 			<div class="filters">
-				<span>
+				<div>
 					<input id="all" type="radio" name="filter" value="All">
 					<label for="all">All</label>
 					<input id="active" type="radio" name="filter" value="Active">
 					<label for="active">Active</label>
 					<input id="completed" type="radio" name="filter" value="Completed">
 					<label for="completed">Completed</label>
-				</span>
+				</div>
 				<button>Mark all done</button>
 			</div>
 
@@ -34,8 +34,8 @@
 
 				<div class="task">
 					<span>
-						<input type="checkbox" name="taskid" value="">
-						<span class="task-name">Reply emails</span>
+						<input id="taskid0" type="checkbox" name="taskid0" value="taskid0">
+						<label for="taskid0" class="task-name">Reply emails</label>
 					</span>
 					<span>
 						<span class="badge">Easy &#x2022; 1h</span>
@@ -46,8 +46,8 @@
 
 				<div class="task">
 					<span>
-						<input type="checkbox" name="taskid" value="">
-						<span class="task-name">Fix login bug</span>
+						<input id="taskid1" type="checkbox" name="taskid1" value="taskid1">
+						<label for="taskid1" class="task-name">Fix login bug</label>
 					</span>
 					<span>
 						<span class="badge-medium">Medium &#x2022; 4h</span>
@@ -58,11 +58,11 @@
 
 				<div class="task">
 					<span>
-						<input type="checkbox" name="taskid" value="">
-						<span class="task-name">Build reports page</span>
+						<input checked id="taskid2" type="checkbox" name="taskid2" value="taskid2">
+						<label for="taskid2" class="task-name"><strike>Build reports page</strike></label>
 					</span>
 					<span>
-						<span class="badge-hard">hard &#x2022; 6h</span>
+						<span class="badge-hard">Hard &#x2022; 6h</span>
 						<button class="remove-task">x</button>
 					</span>
 				</div>
